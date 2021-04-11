@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div id="container">
+        <input type="text" id="userInput" onclick="btnValue()" name="txt" placeholder="0." disabled>
+
+        <button class="operators" onclick="btnValue('+')" value="+">+</button>
+        <button class="operators" onclick="btnValue('-')" value="-">-</button>
+        <button class="operators" onclick="btnValue('*')" value="*">&times;</button>
+        <button class="operators" onclick="btnValue('/')" value="/">&divide;</button>
+        <button class="operators" id="resuleBtn" onclick="solveNum()" value="==">=</button>
+
+        <button class="numbers" onclick="btnValue('7')" value="7">7</button>
+        <button class="numbers" onclick="btnValue('8')" value="8">8</button>
+        <button class="numbers" onclick="btnValue('9')" value="9">9</button>
+        <button class="numbers" onclick="btnValue('4')" value="4">4</button>
+        <button class="numbers" onclick="btnValue('5')" value="5">5</button>
+        <button class="numbers" onclick="btnValue('6')" value="6">6</button>
+        <button class="numbers" onclick="btnValue('1')" value="1">1</button>
+        <button class="numbers" onclick="btnValue('2')" value="2">2</button>
+        <button class="numbers" onclick="btnValue('3')" value="3">3</button>
+        <button class="numbers" onclick="btnValue('0')" value="0">0</button>
+        <button class="operators" onclick="btnValue('.')" value=".">.</button>
+        <button class="operators" value="delete" onclick="clearNum()">AC</button>
+    </div>
+
+    <script src="logic.js"></script>
+
+</body>
+
+</html>
